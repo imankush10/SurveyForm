@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form" action="./backend.php" method="post">
+
+    <label for="name" id="name-label">Name </label> <input id="name" type="text" placeholder="Enter Your Name" required>
+    <label for="email" id="email-label">Email </label> <input id="email" type="email" placeholder="Enter Your Email" required>
+    <label for="number" id="number-label">Age </label> <span>(optional)</span> <input id="number" type="number"
+            placeholder="Age" min="13" max="120">
+    <p class="labels">Which option best describes your current role?</p>
+          <select id="dropdown">
+            <option value="">Select Current Role</option>
+            <option value="one">Student</option>
+            <option value="two">Full time job</option>
+            <option value="three">Other</option>
+          </select>
+
+          <fieldset class="field">
+
+            <p class="labels">Would you recommend us to a friend?</p>
+            <label for="def" class="inlinelabel"> <input id="def" type="radio" name="radio" value="def" class="inline" /> Definitely</label>
+            <label for="maybe" class="inlinelabel"> <input type="radio" name="radio" id="maybe" value="maybe" class="inline"> Maybe</label>
+            <label for="notsure" class="inlinelabel"> <input type="radio" name="radio" id="notsure" value="notsure" class="inline"> Not Sure</label>
+          </fieldset>
+            
+          <p class="labels">What is your favorice feature of our Site?
+          <p>
+
+            <select id="dropdown2">
+              <option value="2">Select an option</option>
+              <option value="one2">Challenges</option>
+              <option value="two2">Projects</option>
+              <option value="three2">Community</option>
+            </select>
+
+            <fieldset class="field">
+            
+          
+          <p class="labels">What would you like to see improved?</p>
+          <label for="fep" class="inlinelabel"><input type="checkbox" value="fep" id="fep" class="inline"> Front-end Projects</label>
+          <label for="bep" class="inlinelabel"><input type="checkbox" value="bep" id="bep" class="inline"> Back-end Projects</label>
+          <label for="bv" class="inlinelabel"><input type="checkbox" value="dv" id="bv" class="inline"> Data Visualization</label>
+          <label for="chlng" class="inlinelabel"><input type="checkbox" value="chlng" id="chlng" class="inline"> Challenges</label>
+          <label for="val" class="inlinelabel"><input type="checkbox" value="val" id="val" class="inline"> Videos</label>
+          <label for="wiki" class="inlinelabel"><input type="checkbox" value="wiki" id="wiki" class="inline"> Wiki</label>
+
+        </fieldset>
+
+          <p class="labels">Any comments or suggestions?</p>
+          <textarea rows="5" cols="30"> Enter your comments here...</textarea>
+          <input id="submit" type="submit">
+  </form>
+</body>
+
+</html>
