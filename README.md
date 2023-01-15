@@ -7,3 +7,5 @@ I don't know how someone can run the code and see the webpage in github itself.
 If you know please help me
 
 Thank you!
+
+P.S. Just learnt about github pages deployment and did it, now everyone can see this webpage. yayy!!
